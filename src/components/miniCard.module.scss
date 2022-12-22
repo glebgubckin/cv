@@ -1,0 +1,21 @@
+.wrapper {
+  width: 100px;
+  height: 100px;
+  background-color: #3b3b3b;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .15s all linear;
+
+  &:hover {
+    transform: scale(102%);
+  }
+
+  & > img {
+    width: auto;
+    height: 50px;
+  }
+}

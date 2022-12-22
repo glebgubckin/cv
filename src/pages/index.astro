@@ -1,0 +1,120 @@
+---
+import Card from '../components/Card'
+import html from '../assets/html.svg'
+import css from '../assets/css.svg'
+import sass from '../assets/sass.svg'
+import tailwind from '../assets/tailwind.svg'
+import javascript from '../assets/javascript.svg'
+import typescript from '../assets/typescript.svg'
+import react from '../assets/react.svg'
+import vue from '../assets/vue.svg'
+import redux from '../assets/redux.svg'
+import mobx from '../assets/mobx.svg'
+import recoil from '../assets/recoil.svg'
+import next from '../assets/next.svg'
+import astro from '../assets/astro.svg'
+import jest from '../assets/jest.svg'
+import vitest from '../assets/vitest.svg'
+import cypress from '../assets/cypress.svg'
+import eslint from '../assets/eslint.svg'
+import prettier from '../assets/prettier.svg'
+import vite from '../assets/vite.svg'
+import webpack from '../assets/webpack.svg'
+import nodejs from '../assets/nodejs.svg'
+import express from '../assets/express.svg'
+import nest from '../assets/nest.svg'
+import prisma from '../assets/prisma.svg'
+import postgres from '../assets/postgres.svg'
+import mongo from '../assets/mongo.svg'
+import git from '../assets/git.svg'
+import github from '../assets/github.svg'
+import docker from '../assets/docker.svg'
+import figma from '../assets/figma.svg'
+import photoshop from '../assets/photoshop.svg'
+import whatsapp from '../assets/whatsapp.svg'
+import telegram from '../assets/telegram.svg'
+import MiniCard from '../components/MiniCard'
+import '../index.scss'
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<h1>Губкин Глеб</h1>
+			<h2>💻Tech stack</h2>
+			<h3>Верстка</h3>
+			<div class="cards">
+				<Card client:visible title="HTML" img={html} />
+				<Card client:visible title="CSS" img={css} />
+				<Card client:visible title="SASS" img={sass} />
+				<Card client:visible title="Tailwind" img={tailwind} />
+				<Card client:visible title="JavaScript" img={javascript} />
+				<Card client:visible title="TypeScript" img={typescript} />
+			</div>
+			<h3>Frontend frameworks</h3>
+			<div class="cards">
+				<Card client:visible title="React" img={react} />
+				<Card client:visible title="Vue" img={vue} />
+			</div>
+			<h3>State managers</h3>
+			<div class="cards">
+				<Card client:visible title="Redux" img={redux} />
+				<Card client:visible title="Mobx" img={mobx} />
+				<Card client:visible title="Recoil" img={recoil} />
+			</div>
+			<h3>SSG & SSR</h3>
+			<div class="cards">
+				<Card client:visible title="Next" img={next} />
+				<Card client:visible title="Astro" img={astro} />
+			</div>
+			<h3>Testing tools</h3>
+			<div class="cards">
+				<Card client:visible title="Jest" img={jest} />
+				<Card client:visible title="Vitest" img={vitest} />
+				<Card client:visible title="Cypress" img={cypress} />
+			</div>
+			<h3>Formatters</h3>
+			<div class="cards">
+				<Card client:visible title="ESLint" img={eslint} />
+				<Card client:visible title="Prettier" img={prettier} />
+			</div>
+			<h3>Bundlers</h3>
+			<div class="cards">
+				<Card client:visible title="Webpack" img={webpack} />
+				<Card client:visible title="Vite" img={vite} />
+			</div>
+			<h3>Backend</h3>
+			<div class="cards">
+				<Card client:visible title="Node" img={nodejs} />
+				<Card client:visible title="Express" img={express} />
+				<Card client:visible title="Nest" img={nest} />
+				<Card client:visible title="Prisma" img={prisma} />
+				<Card client:visible title="Postgres" img={postgres} />
+				<Card client:visible title="Mongo" img={mongo} />
+			</div>
+			<h3>DevOps</h3>
+			<div class="cards">
+				<Card client:visible title="Git" img={git} />
+				<Card client:visible title="Github" img={github} />
+				<Card client:visible title="Docker" img={docker} />
+			</div>
+			<h3>Design</h3>
+			<div class="cards">
+				<Card client:visible title="Figma" img={figma} />
+				<Card client:visible title="Photoshop" img={photoshop} />
+			</div>
+			<h2>Social links</h2>
+			<div class="cards">
+				<MiniCard client:visible link="https://wa.me/+79099569043" img={whatsapp} />
+				<MiniCard client:visible link="https://t.me/glebgubckin" img={telegram} />
+			</div>
+		</div>
+	</body>
+</html>
