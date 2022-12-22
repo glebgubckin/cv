@@ -61,16 +61,36 @@ h3 {
   flex-wrap: wrap;
 }
 
+.minicards {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
 @media screen and (max-width: 740px) {
   .wrapper {
     align-items: center;
   }
 
   .cards {
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   h3 {
     margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .cards {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .minicards {
+    flex-direction: column;
   }
 }
