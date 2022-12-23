@@ -1,0 +1,26 @@
+---
+import axios from 'axios'
+import financeCRM from '../assets/dashboard.png'
+import cv from '../assets/cv.png'
+import Project, { ProjectProps } from '../components/Project/Project'
+const data = await axios.get('https://cv.glebgubckin.ru/api/projects')
+const projects: ProjectProps[] = [...data.data]
+const images: string[] = [financeCRM, cv]
+import './projects.scss'
+---
+
+<section class="projects">
+  {
+    projects.map((project: ProjectProps, index) => {
+      return (<Project 
+                client:load 
+                title={project.title} 
+                status={project.status}
+                stack={project.stack}
+                link={project.link}
+                implemented={project.implemented}
+                img={images[index]}
+              />)
+    })
+  }
+</section>

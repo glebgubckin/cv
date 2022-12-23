@@ -1,5 +1,7 @@
 ---
-import Card from '../components/Card'
+import Projects from '../sections/projects.astro'
+import Card from '../components/Card/Card'
+import MiniCard from '../components/MiniCard/MiniCard'
 import html from '../assets/html.svg'
 import css from '../assets/css.svg'
 import sass from '../assets/sass.svg'
@@ -33,7 +35,6 @@ import figma from '../assets/figma.svg'
 import photoshop from '../assets/photoshop.svg'
 import whatsapp from '../assets/whatsapp.svg'
 import telegram from '../assets/telegram.svg'
-import MiniCard from '../components/MiniCard'
 import '../index.scss'
 ---
 
@@ -51,7 +52,7 @@ import '../index.scss'
 		<div class="wrapper">
 			<h1>Губкин Глеб</h1>
 			<h2>💻Tech stack</h2>
-			<h3>Верстка</h3>
+			<h3>Верстка (Layout)</h3>
 			<div class="cards">
 				<Card client:visible title="HTML" img={html} />
 				<Card client:visible title="CSS" img={css} />
@@ -112,6 +113,8 @@ import '../index.scss'
 				<Card client:visible title="Figma" img={figma} />
 				<Card client:visible title="Photoshop" img={photoshop} />
 			</div>
+			<h2>Projects</h2>
+			<Projects />
 			<h2>Social links</h2>
 			<div class="minicards">
 				<MiniCard client:visible link="https://t.me/glebgubckin" img={telegram} />

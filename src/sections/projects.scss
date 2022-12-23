@@ -1,0 +1,13 @@
+.projects {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: inherit;
+  gap: 20px;
+}
+
+@media screen and (max-width: 470px) {
+  .projects {
+    justify-content: center;
+  }
+}
